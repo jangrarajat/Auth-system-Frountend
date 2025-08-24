@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+    input:focus {
+        outline: none;
+ 
+    }
+
+
+  #homeDiv{
+    background-image: url('https://media.istockphoto.com/id/904847870/photo/business-services-technical-help-gear-configuration-support-center-contact-us-landing-page.jpg?s=2048x2048&w=is&k=20&c=8pmjYloXXlYOfTS8jFM_S2TPClvLJGeCB7E8xH3Vduc=');
+   background-size: cover;
+   height: window;
+   width: window;
+}
+
+
+  .nice-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: system-ui, sans-serif;
+  }
+  .nice-table th, .nice-table td {
+    padding: 10px 14px;
+    border: 1px solid #e5e7eb;
+    text-align: left;
+  }
+  .nice-table thead th {
+    background: #f3f4f6;
+  }
+  .nice-table tbody tr:nth-child(odd) {
+    background: #fafafa;
+  }
+  .nice-table tbody tr:hover {
+    background: #eef2ff;
+  }
+
