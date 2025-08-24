@@ -77,7 +77,7 @@ function Signup() {
       {loader ? (<Laoder />) : (null)}
 
 
-      <div className='w-full h-full   '>
+      <div className='w-full h-full  md:mt-10 md:px-10 p-3'>
         <div className=' flex flex-col md:flex-row'>
 
           <div className=' md:w-[50%] flex flex-row justify-center items-center'>
