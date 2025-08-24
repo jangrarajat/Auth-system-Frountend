@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
-import ErrorMessage from '../components/errorMessage'
+import ErrorMessage from '../components/ErrorMessage'
 import axios from 'axios'
 import SuccessMessage from '../components/SuccessMessage'
 import Laoder from '../components/Laoder'
