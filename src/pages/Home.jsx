@@ -9,6 +9,9 @@ import Laoder from '../components/Laoder'
 import LandingPage from '../components/LandingPage'
 
 function Home() {
+
+
+
   const [loader, serLoaser] = useState(false)
   const navigator = useNavigate()
   let [foods, setFoods] = useState()
@@ -16,10 +19,16 @@ function Home() {
   const [loggedInUserEmail, setloggedInUserEmail] = useState('')
 
 
+
+
   useEffect(() => {
     setLoggedInUser(localStorage.getItem('loggedInUser'))
     setloggedInUserEmail(localStorage.getItem('loggedInUserEmail'))
   }, [])
+
+
+
+
 
   function handleLogout(e) {
     serLoaser(true)
@@ -37,6 +46,8 @@ function Home() {
   }
 
 
+
+
   const getAllFoodData = async () => {
     const headers = {
       headers: { "Authorization": localStorage.getItem('token') }
@@ -45,16 +56,12 @@ function Home() {
       const API_URL = import.meta.env.VITE_API_URL;
       const res = await axios.get(`${API_URL}/food`, headers)
       const foods = await res.data
-
-
       setFoods(foods)
-
-
-
     } catch (error) {
       console.log(error)
     }
   }
+
 
   useEffect(() => {
     getAllFoodData()
@@ -64,18 +71,13 @@ function Home() {
   return (
     <>
 
-      {/* Loader  */}
+     
 
       {loader ? (<Laoder />) : (null)}
 
-      {/* Navbar  */}
-      {/* <Navbar */}
+   
 
-   <LandingPage  handleLogout={handleLogout} loggedInUser={loggedInUser} />
-
-      {/* FoodTable  */}
-
-      {/* <FoodTable foods={foods} /> */}
+      <LandingPage handleLogout={handleLogout} loggedInUser={loggedInUser} />
 
 
       <ToastContainer />

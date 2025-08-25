@@ -87,24 +87,24 @@ function Login() {
       <div className='w-full h-full  md:mt-10 md:px-10 p-3'>
         <div className=' flex flex-col md:flex-row'>
 
-          <div className=' md:w-[50%] flex flex-row justify-center items-center'>
-            <img className='h-48 md:h-full'
-              src="https://i.pinimg.com/736x/5f/d1/16/5fd116d64b8b7e3cfcb8da7f807ede72.jpg"
+          <div className='mt-10 md:mt-0 md:w-[50%] flex flex-row justify-center items-center'>
+            <img className='h-48  rounded-lg md:h-[67%]'
+              src="https://i.pinimg.com/1200x/9c/5c/3d/9c5c3dc3b6d1368aa46b2c95c50d6434.jpg"
               alt="signup image" />
           </div>
 
 
-          <div className='md:w-[50%]   '>
+          <div className='md:w-[50%]  flex justify-center items-center  '>
             <form
               onSubmit={submitForm}
-              className='flex flex-col  justify-center items-center p-3 md:p-10'>
-              <h1 className='font-extrabold text-5xl mb-4'>Login</h1>
+              className='flex flex-col  justify-center items-center p-3 md:p-10 w-[90%]'>
+              <h1 className='font-extrabold text-5xl mb-4 dark:text-white'>Login</h1>
 
 
               <label className='w-[100%] h-9  md:h-14 pl-4 text-start ' htmlFor="email"></label>
               <input
                 onChange={handleLogin}
-                className='w-[100%] h-9  md:h-14 pl-4 border-b-2 border-gray-500'
+                className=' w-[100%] h-9  md:h-14 pl-4 border-b-2 border-gray-500 dark:bg-gray-800 dark:rounded-lg dark:text-white'
                 type="email"
                 name='email'
                 placeholder='Enter email'
@@ -112,13 +112,13 @@ function Login() {
               <label className='w-[100%] h-9  md:h-14 pl-4 text-start mt-5' htmlFor="password"></label>
               <input
                 onChange={handleLogin}
-                className='w-[100%] h-9  md:h-14 pl-4  border-b-2 border-gray-500'
+                className='w-[100%] h-9  md:h-14 pl-4  border-b-2 border-gray-500 dark:bg-gray-800 dark:rounded-lg dark:text-white'
                 type="password"
                 name='password'
                 placeholder='Enter password'
               />
               <p
-                className='text-gray-900 w-full text-start mt-11 pl-3'>Don't have account
+                className='text-gray-900 w-full text-start mt-11 pl-3 dark:text-white'>Don't have account
                 <Link to="/signup" className='text-blue-900 ml-3'>
                   Signup
 

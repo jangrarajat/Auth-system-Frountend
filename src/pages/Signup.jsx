@@ -77,23 +77,23 @@ function Signup() {
       {loader ? (<Laoder />) : (null)}
 
 
-      <div className='w-full h-full  md:mt-10 md:px-10 p-3'>
+      <div className='w-full h-full   md:px-10 p-3'>
         <div className=' flex flex-col md:flex-row'>
 
-          <div className=' md:w-[50%] flex flex-row justify-center items-center'>
-            <img className='h-48 md:h-full' src="https://i.pinimg.com/736x/5f/d1/16/5fd116d64b8b7e3cfcb8da7f807ede72.jpg" alt="signup image" />
+          <div className='mt-10 md:mt-0 md:w-[50%] flex flex-row justify-center items-center'>
+            <img className='h-48 md:h-[67%] rounded-lg' src="https://i.pinimg.com/1200x/9c/5c/3d/9c5c3dc3b6d1368aa46b2c95c50d6434.jpg" alt="signup image" />
           </div>
 
 
-          <div className='md:w-[50%]'>
+          <div className='md:w-[50%]  flex justify-center items-center'>
             <form
               onSubmit={submitForm}
-              className='flex flex-col  justify-center items-center p-3 md:p-4'>
-              <h1 className='font-extrabold text-5xl mb-4'>Signup</h1>
+              className='flex flex-col  justify-center items-center p-3 md:p-4 w-[90%]'>
+              <h1 className='font-extrabold text-5xl mb-4 dark:text-white'>Signup</h1>
               <label className='w-[100%] h-9  md:h-14 pl-4 text-start' htmlFor="name"></label>
               <input
                 onChange={handleSignup}
-                className='w-[100%] h-9  md:h-14 pl-4 border-b-2 border-gray-500  '
+                className='w-[100%] h-9  md:h-14 pl-4 border-b-2 border-gray-500  dark:bg-gray-800 dark:rounded-lg dark:text-white'
                 type="text"
                 name='name'
                 placeholder='Enter name'
@@ -102,7 +102,7 @@ function Signup() {
               <label className='w-[100%] h-9  md:h-14 pl-4 text-start ' htmlFor="email"></label>
               <input
                 onChange={handleSignup}
-                className='w-[100%] h-9  md:h-14 pl-4 border-b-2 border-gray-500'
+                className='w-[100%] h-9  md:h-14 pl-4 border-b-2 border-gray-500 dark:bg-gray-800 dark:rounded-lg dark:text-white'
                 type="email"
                 name='email'
                 placeholder='Enter email'
@@ -110,13 +110,13 @@ function Signup() {
               <label className='w-[100%] h-9  md:h-14 pl-4 text-start ' htmlFor="password"></label>
               <input
                 onChange={handleSignup}
-                className='w-[100%] h-9  md:h-14 pl-4  border-b-2 border-gray-500'
+                className='w-[100%] h-9  md:h-14 pl-4  border-b-2 border-gray-500 dark:bg-gray-800 dark:rounded-lg dark:text-white'
                 type="password"
                 name='password'
                 placeholder='Enter password'
               />
               <p
-                className='text-gray-900 w-full text-start mt-11 pl-3'>Already have an account !
+                className='text-gray-900 w-full text-start mt-11 pl-3 dark:text-white'>Already have an account !
                 <Link to='/login' className='text-blue-900 ml-3'>
                   Login
 

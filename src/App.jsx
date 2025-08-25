@@ -15,7 +15,7 @@ function App() {
   }
 
   return (
-    <div className='App'>
+    <div className='App dark:bg-gray-900  fixed h-full w-full  justify-center items-center'>
       <RefeshHandler setIsAuthed={setIsAuthed} />
       <Routes>
         <Route path='/' element={<Navigate to="/login" />} />
