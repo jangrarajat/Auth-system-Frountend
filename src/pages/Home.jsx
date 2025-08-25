@@ -4,8 +4,8 @@ import { Link, useNavigate, NavLink } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
 import axios from 'axios'
 import Laoder from '../components/Laoder'
-import Navbar from '../components/Navbar'
-import FoodTable from '../components/foodTable'
+
+
 import LandingPage from '../components/LandingPage'
 
 function Home() {
