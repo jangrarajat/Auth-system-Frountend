@@ -124,7 +124,7 @@ function Login() {
 
                 </Link>
               </p>
-              <button className='w-[100%] h-10  md:h-14 bg-blue-400  mt-10 rounded-md text-white font-extralight text-2xl'
+              <button className='w-[100%] h-10  md:h-14 bg-blue-800  mt-10 rounded-md text-white font-extralight text-2xl'
               >Login</button>
             </form>
             <ToastContainer />

@@ -80,7 +80,7 @@ function Signup() {
       <div className='w-full h-full   md:px-10 p-3'>
         <div className=' flex flex-col md:flex-row'>
 
-          <div className='mt-10 md:mt-0 md:w-[50%] flex flex-row justify-center items-center'>
+          <div className='mt-6 md:mt-0 md:w-[50%] flex flex-row justify-center items-center'>
             <img className='h-48 md:h-[67%] rounded-lg' src="https://i.pinimg.com/1200x/9c/5c/3d/9c5c3dc3b6d1368aa46b2c95c50d6434.jpg" alt="signup image" />
           </div>
 
@@ -122,7 +122,7 @@ function Signup() {
 
                 </Link>
               </p>
-              <button className='w-[100%] h-10  md:h-14 bg-blue-400 mt-5 rounded-md text-white font-extralight text-2xl'
+              <button className='w-[100%] h-10  md:h-14 bg-blue-800 mt-5 rounded-md text-white font-extralight text-2xl'
               >Signup</button>
             </form>
             <ToastContainer />
